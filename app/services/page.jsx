@@ -16,7 +16,7 @@ export default function ServicesPage() {
         {services.map((service) => (
           <div
             key={service}
-            className="bg-gray-50 rounded-3xl p-8 border border-gray-200"
+            className="bg-[#fffaf0] rounded-3xl p-8 border border-[#e2cfa8]"
           >
             <div className="w-14 h-14 bg-gray-200 rounded-2xl mb-6" />
 
