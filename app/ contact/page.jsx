@@ -1,1 +1,52 @@
+export default function ContactPage() {
+  return (
+    <div className="max-w-7xl mx-auto px-6 py-24">
+      <h1 className="text-5xl font-bold mb-12">
+        聯絡我們
+      </h1>
 
+      <div className="grid lg:grid-cols-2 gap-8">
+        <div className="bg-gray-900 text-white rounded-3xl p-10">
+          <div className="space-y-5 text-lg">
+            <p>地址：桃園市桃園區大華九街6號</p>
+            <p>電話：03-332-0958</p>
+            <p>傳真：03-332-1518</p>
+            <p>Email：JS3320958@gmail.com</p>
+          </div>
+
+          <div className="flex flex-wrap gap-4 mt-10">
+            <a
+              href="https://maps.google.com/?q=桃園市桃園區大華九街6號"
+              target="_blank"
+              className="bg-white text-gray-900 px-6 py-3 rounded-2xl font-semibold"
+            >
+              Google 地圖
+            </a>
+
+            <a
+              href="mailto:JS3320958@gmail.com"
+              className="border border-white px-6 py-3 rounded-2xl font-semibold"
+            >
+              Email 聯絡
+            </a>
+
+            <a
+              href="tel:033320958"
+              className="border border-white px-6 py-3 rounded-2xl font-semibold"
+            >
+              立即撥號
+            </a>
+          </div>
+        </div>
+
+        <div className="bg-white rounded-3xl overflow-hidden min-h-[420px] border border-gray-200">
+          <iframe
+            title="JS Hardware Map"
+            src="https://maps.google.com/maps?q=桃園市桃園區大華九街6號&t=&z=16&ie=UTF8&iwloc=&output=embed"
+            className="w-full h-full min-h-[420px] border-0"
+          />
+        </div>
+      </div>
+    </div>
+  )
+}
