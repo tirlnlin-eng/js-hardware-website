@@ -9,9 +9,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="zh-Hant">
-      <body className="bg-white text-gray-900">
+      <body className="border-[#b8924f] text-gray-900">
 
-        <header className="border-b bg-white">
+        <header className="border-b border-[#b8924f]">
           <div className="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
 
             <div>
