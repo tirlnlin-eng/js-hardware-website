@@ -32,7 +32,7 @@ export default function BrandsPage() {
           <a
             key={brand.name}
             href={brand.url}
-            className="bg-gray-50 rounded-3xl p-8 border border-gray-200 hover:shadow-xl transition"
+            className="bg-[#fffaf0] rounded-3xl p-8 border border-[#e2cfa8] hover:shadow-xl transition"
           >
             <div className="h-20 bg-gray-200 rounded-2xl mb-6 flex items-center justify-center">
               LOGO
