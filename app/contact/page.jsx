@@ -8,10 +8,10 @@ export default function ContactPage() {
         </p>
 
         <div className="grid lg:grid-cols-2 gap-8">
-          <div className="bg-gray-900 text-white rounded-3xl p-10">
+          <div className="bg-[#ead7b0] text-gray-900 rounded-3xl p-10">
             <h2 className="text-3xl font-bold mb-8">鉅晟電料五金行</h2>
 
-            <div className="space-y-5 text-lg text-gray-200">
+            <div className="space-y-5 text-lg text-gray-700">
               <p>地址：桃園市桃園區大華九街6號</p>
               <p>電話：03-332-0958</p>
               <p>傳真：03-332-1518</p>
@@ -30,21 +30,21 @@ export default function ContactPage() {
 
               <a
                 href="mailto:JS3320958@gmail.com"
-                className="border border-white px-6 py-3 rounded-2xl font-semibold"
+                className="border border-[#b8924f] px-6 py-3 rounded-2xl font-semibold"
               >
                 Email 聯絡
               </a>
 
               <a
                 href="tel:033320958"
-                className="border border-white px-6 py-3 rounded-2xl font-semibold"
+                className="border border-[#b8924f] px-6 py-3 rounded-2xl font-semibold"
               >
                 立即撥號
               </a>
             </div>
           </div>
 
-          <div className="bg-white rounded-3xl overflow-hidden min-h-[420px] border border-gray-200">
+          <div className="bg-white rounded-3xl overflow-hidden min-h-[420px] border border-[#e2cfa8]">
             <iframe
               title="JS Hardware Map"
               src="https://maps.google.com/maps?q=桃園市桃園區大華九街6號&t=&z=16&ie=UTF8&iwloc=&output=embed"
