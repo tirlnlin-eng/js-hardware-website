@@ -10,43 +10,43 @@ export default function HomePage() {
   const services = ['工業電料供應', '控制器材', '配線材料', '代客找料']
 
   return (
-    <div className="min-h-screen bg-white text-gray-800">  
-      <section className="bg-gradient-to-br from-gray-900 to-gray-700 text-gray-900">
+    <div className="min-h-screen bg-[#fffaf0] text-gray-900">
+      <section className="bg-gradient-to-br from-[#f8efd9] via-[#efe0ba] to-[#d9bd82]">
         <div className="max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <p className="uppercase tracking-[0.3em] text-sm text-gray-700 mb-4">
               Industrial Electrical & Hardware Supply
             </p>
 
-            <h1 className="text-5xl lg:text-6xl font-bold leading-tight mb-4">
+            <h1 className="text-5xl lg:text-6xl font-bold leading-tight mb-4 text-gray-900">
               鉅晟電料五金行
             </h1>
 
-            <p className="text-2xl lg:text-3xl text-gray-700 font-semibold mb-8">
+            <p className="text-2xl lg:text-3xl text-gray-800 font-semibold mb-8">
               JS Hardware Industrial Supply
             </p>
 
-            <p className="text-lg text-gray-700 leading-relaxed mb-10 max-w-xl">
+            <p className="text-lg text-gray-800 leading-relaxed mb-10 max-w-xl">
               提供工業電料、控制器材、配線材料、五金零件與代客找料服務，
               協助工廠、設備商與維修工程人員快速解決採購與缺料需求。
             </p>
 
             <a
               href="/brand"
-              className="inline-block bg-white text-gray-900 px-6 py-3 rounded-2xl font-semibold shadow-lg hover:scale-105 transition"
+              className="inline-block bg-gray-900 text-white px-6 py-3 rounded-2xl font-semibold shadow-lg hover:scale-105 transition"
             >
               查看經銷品牌
             </a>
           </div>
 
-          <div className="bg-[#fff7e6] backdrop-blur rounded-3xl p-8 border border-[#b8924f]/20 shadow-2xl">
+          <div className="bg-[#fff7e6] rounded-3xl p-8 border border-[#d9bd82] shadow-xl">
             <p className="text-sm text-gray-700 mb-6">主要服務項目</p>
 
             <div className="grid grid-cols-2 gap-4">
               {services.map((item) => (
                 <div
                   key={item}
-                  className="bg-[#fff7e6] rounded-2xl p-8 text-center text-xl font-medium"
+                  className="bg-[#f3e6c8] rounded-2xl p-8 text-center text-xl font-medium text-gray-900 border border-[#e2cfa8]"
                 >
                   {item}
                 </div>
@@ -56,21 +56,25 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="max-w-7xl mx-auto px-6 py-24">
+      <section className="max-w-7xl mx-auto px-6 py-24 bg-[#fffaf0]">
         <div className="flex flex-col lg:flex-row justify-between gap-8 mb-12">
           <div>
-            <p className="uppercase tracking-[0.3em] text-sm text-gray-500 mb-3">
+            <p className="uppercase tracking-[0.3em] text-sm text-gray-600 mb-3">
               Distribution Brands
             </p>
-            <h2 className="text-4xl font-bold mb-4">主要經銷品牌</h2>
-            <p className="text-gray-600">
+
+            <h2 className="text-4xl font-bold mb-4 text-gray-900">
+              主要經銷品牌
+            </h2>
+
+            <p className="text-gray-700">
               點選品牌 Logo 進入產品與型錄入口頁，方便工程師與師傅快速查料。
             </p>
           </div>
 
           <a
             href="/brand"
-            className="self-start bg-[#ead7b0] text-gray-900 px-6 py-3 rounded-2xl font-semibold"
+            className="self-start bg-gray-900 text-white px-6 py-3 rounded-2xl font-semibold hover:scale-105 transition"
           >
             查看全部品牌
           </a>
@@ -81,14 +85,17 @@ export default function HomePage() {
             <a
               key={brand.name}
               href={brand.url}
-              className="bg-[#fffaf0] rounded-3xl p-6 border border-[#e2cfa8] hover:shadow-xl hover:-translate-y-1 transition text-center"
+              className="bg-[#fff7e6] rounded-3xl p-6 border border-[#e2cfa8] hover:shadow-xl hover:-translate-y-1 transition text-center"
             >
-              <div className="h-20 bg-white rounded-2xl mb-6 flex items-center justify-center border border-[#e2cfa8] font-bold text-gray-500">
+              <div className="h-20 bg-white rounded-2xl mb-6 flex items-center justify-center border border-[#e2cfa8] font-bold text-gray-600">
                 LOGO
               </div>
 
-              <div className="text-2xl font-bold mb-2">{brand.name}</div>
-              <div className="text-sm text-gray-500">{brand.desc}</div>
+              <div className="text-2xl font-bold mb-2 text-gray-900">
+                {brand.name}
+              </div>
+
+              <div className="text-sm text-gray-600">{brand.desc}</div>
             </a>
           ))}
         </div>
