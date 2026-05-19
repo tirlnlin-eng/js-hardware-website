@@ -10,25 +10,7 @@ export default function HomePage() {
   const services = ['工業電料供應', '控制器材', '配線材料', '代客找料']
 
   return (
-    <div className="min-h-screen bg-white text-gray-800">
-      <header className="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <a href="/" className="font-bold text-xl">
-            鉅晟電料五金行
-            <div className="text-xs font-normal tracking-widest text-gray-500">
-              JS HARDWARE
-            </div>
-          </a>
-
-          <nav className="flex gap-6 text-sm font-medium">
-            <a href="/" className="hover:text-gray-500">首頁</a>
-            <a href="/brand" className="hover:text-gray-500">經銷品牌</a>
-            <a href="/services" className="hover:text-gray-500">服務項目</a>
-            <a href="/contact" className="hover:text-gray-500">聯絡我們</a>
-          </nav>
-        </div>
-      </header>
-
+    <div className="min-h-screen bg-white text-gray-800">  
       <section className="bg-gradient-to-br from-gray-900 to-gray-700 text-white">
         <div className="max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-12 items-center">
           <div>
