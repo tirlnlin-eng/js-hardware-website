@@ -11,10 +11,10 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-white text-gray-800">  
-      <section className="bg-gradient-to-br from-gray-900 to-gray-700 text-white">
+      <section className="bg-gradient-to-br from-gray-900 to-gray-700 text-gray-900">
         <div className="max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <p className="uppercase tracking-[0.3em] text-sm text-gray-300 mb-4">
+            <p className="uppercase tracking-[0.3em] text-sm text-gray-700 mb-4">
               Industrial Electrical & Hardware Supply
             </p>
 
@@ -22,11 +22,11 @@ export default function HomePage() {
               鉅晟電料五金行
             </h1>
 
-            <p className="text-2xl lg:text-3xl text-gray-200 font-semibold mb-8">
+            <p className="text-2xl lg:text-3xl text-gray-700 font-semibold mb-8">
               JS Hardware Industrial Supply
             </p>
 
-            <p className="text-lg text-gray-200 leading-relaxed mb-10 max-w-xl">
+            <p className="text-lg text-gray-700 leading-relaxed mb-10 max-w-xl">
               提供工業電料、控制器材、配線材料、五金零件與代客找料服務，
               協助工廠、設備商與維修工程人員快速解決採購與缺料需求。
             </p>
@@ -39,14 +39,14 @@ export default function HomePage() {
             </a>
           </div>
 
-          <div className="bg-white/10 backdrop-blur rounded-3xl p-8 border border-white/20 shadow-2xl">
-            <p className="text-sm text-gray-300 mb-6">主要服務項目</p>
+          <div className="bg-[#fff7e6] backdrop-blur rounded-3xl p-8 border border-[#b8924f]/20 shadow-2xl">
+            <p className="text-sm text-gray-700 mb-6">主要服務項目</p>
 
             <div className="grid grid-cols-2 gap-4">
               {services.map((item) => (
                 <div
                   key={item}
-                  className="bg-white/10 rounded-2xl p-8 text-center text-xl font-medium"
+                  className="bg-[#fff7e6] rounded-2xl p-8 text-center text-xl font-medium"
                 >
                   {item}
                 </div>
@@ -70,7 +70,7 @@ export default function HomePage() {
 
           <a
             href="/brand"
-            className="self-start bg-gray-900 text-white px-6 py-3 rounded-2xl font-semibold"
+            className="self-start bg-[#ead7b0] text-gray-900 px-6 py-3 rounded-2xl font-semibold"
           >
             查看全部品牌
           </a>
@@ -81,9 +81,9 @@ export default function HomePage() {
             <a
               key={brand.name}
               href={brand.url}
-              className="bg-gray-50 rounded-3xl p-6 border border-gray-200 hover:shadow-xl hover:-translate-y-1 transition text-center"
+              className="bg-[#fffaf0] rounded-3xl p-6 border border-[#e2cfa8] hover:shadow-xl hover:-translate-y-1 transition text-center"
             >
-              <div className="h-20 bg-white rounded-2xl mb-6 flex items-center justify-center border border-gray-200 font-bold text-gray-500">
+              <div className="h-20 bg-white rounded-2xl mb-6 flex items-center justify-center border border-[#e2cfa8] font-bold text-gray-500">
                 LOGO
               </div>
 
