@@ -28,13 +28,14 @@ export default function BrandPage() {
                 href={linkUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#fff7e6] border border-[#e2cfa8] rounded-3xl p-6 min-h-[180px] flex flex-col items-center justify-center hover:shadow-xl hover:-translate-y-1 transition"
+                aria-label={`前往 ${brand.name} 官方網站或產品目錄`}
+                className="group bg-[#fff7e6] border border-[#e2cfa8] rounded-3xl p-6 min-h-[170px] flex flex-col items-center justify-center hover:shadow-xl hover:-translate-y-1 transition"
               >
-                <div className="h-24 w-full flex items-center justify-center mb-4 bg-white rounded-2xl border border-[#e2cfa8] p-4">
+                <div className="h-24 w-full flex items-center justify-center mb-5 bg-white rounded-2xl border border-[#e2cfa8] p-4">
                   <img
                     src={`/logos/${brand.logo}`}
                     alt={`${brand.name} Logo`}
-                    className="max-h-16 max-w-full object-contain"
+                    className="max-h-16 max-w-full object-contain transition group-hover:scale-105"
                   />
                 </div>
 
@@ -47,10 +48,6 @@ export default function BrandPage() {
                     {brand.chinese}
                   </div>
                 )}
-
-                <div className="text-xs text-gray-500 mt-3 text-center">
-                  {brand.catalog ? '產品目錄' : '官方網站'}
-                </div>
               </a>
             )
           })}
