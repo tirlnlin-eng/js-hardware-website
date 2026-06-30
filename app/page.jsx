@@ -1,4 +1,4 @@
-import brands from "@/data/brands"
+import brands from "../data/brands"
 
 export default function HomePage() {
   const featuredBrands = brands.filter((brand) => brand.show !== false).slice(0, 5)
